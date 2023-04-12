@@ -20,6 +20,8 @@ public class DivideThrow {
         } 
         catch (CustomArraySizeException e) {
             System.out.println(e.getMessage());
+            System.out.printf("Длина первого массива: %d\nДлина второго массива: %d\n",
+                    e.getLength1(), e.getLength2());
         }
     }
 
